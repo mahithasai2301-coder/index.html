@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Study Goals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Student Study Goals</h1>
+    <p class="subtitle">Set your study goals and track your progress.</p>
+
+    <div class="card">
+      <input id="goalInput" type="text" placeholder="Enter a study goal">
+      <button onclick="addGoal()">Add Goal</button>
+    </div>
+
+    <div class="card">
+      <h2>My Goals</h2>
+      <ul id="goalList"></ul>
+      <p id="emptyMessage">No goals added yet.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #ede9fe);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #1f2937;
+}
+.container { max-width: 700px; margin: auto; }
+h1 { text-align: center; margin-bottom: 8px; }
+.subtitle { text-align: center; color: #64748b; }
+.card {
+  background: white;
+  padding: 24px;
+  margin-top: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+input {
+  width: 72%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+ul { padding: 0; list-style: none; }
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  margin: 8px 0;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+.goal-text.completed { text-decoration: line-through; opacity: .6; }
+.delete { background: #fee2e2; }
+.complete { background: #dcfce7; }
+#emptyMessage { color: #64748b; }
+@media (max-width: 600px) {
+  input { width: 100%; margin-bottom: 10px; }
+  button { width: 100%; }
+}
